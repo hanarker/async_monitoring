@@ -15,14 +15,10 @@ Questo progetto implementa un sistema di monitoraggio asincrono utilizzando Azur
 
 ```
 async_monitoring/
-├── async_orchestrator/      # Orchestratore principale per le funzioni durevoli
-├── http_trigger_async/      # Trigger HTTP per avviare il processo
+├── async_orchestrator/     # Orchestratore principale per le funzioni durevoli
+├── http_trigger_async/     # Trigger HTTP per avviare il processo
 ├── monitor_task/           # Funzione di monitoraggio
 ├── wait_and_work/          # Funzione di elaborazione
-├── basic_test/            # Test di base
-│   ├── backend.py
-│   ├── fe_html.py
-│   └── frontend.py
 ├── host.json              # Configurazione dell'host
 ├── local.settings.json    # Impostazioni locali
 └── requirements.txt       # Dipendenze Python
@@ -33,12 +29,7 @@ async_monitoring/
 1. Installare le dipendenze:
    ```bash
    pip install -r requirements.txt
-   ```
-
-2. Configurare le impostazioni locali:
-   - Copiare `local.settings.json.example` in `local.settings.json`
-   - Aggiornare le impostazioni necessarie
-
+   ```   
 ## 🏃‍♂️ Esecuzione Locale
 
 1. Avviare l'emulatore di Azurite per lo storage locale:
@@ -76,13 +67,6 @@ async_monitoring/
     "result": {}
   }
   ```
-
-## 🛠️ Test
-
-Il progetto include test di base nella cartella `basic_test/`:
-- `backend.py`: Test del backend
-- `frontend.py`: Test del frontend
-- `fe_html.py`: Test dell'interfaccia HTML
 
 ## 📝 Note di Sviluppo
 
